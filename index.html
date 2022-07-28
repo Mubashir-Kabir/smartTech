@@ -32,27 +32,36 @@
           <div>
             <a class="navbar-brand fw-bolder" href="#">Smart Tech</a>
           </div>
+          <div class="d-flex flex-lg-row-reverse">
+            <div class="d-md-block d-none">
+              <button type="button" class="btn btn-outline-primary mx-3">
+                Register
+              </button>
+            </div>
+            <div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-          <div>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNavAltMarkup"
-              aria-controls="navbarNavAltMarkup"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                <a class="nav-link" href="#">Courses</a>
-                <a class="nav-link" href="#">Deals</a>
-                <a class="nav-link" href="#">Success</a>
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Register</a>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                  <a class="nav-link" href="#">Courses</a>
+                  <a class="nav-link" href="#">Deals</a>
+                  <a class="nav-link" href="#">Success</a>
+                  <a class="nav-link" href="#">About</a>
+                  <a class="nav-link" href="#">Register</a>
+                </div>
               </div>
             </div>
           </div>
@@ -146,6 +155,7 @@
         </div>
       </section>
     </header>
+
     <main class="container">
       <!-- populer courses section  -->
       <section class="populerCourses mt-5">
@@ -276,7 +286,74 @@
             </p>
           </div>
           <div class="joinBtn">
-            <button class="btn btn-light text-primary">Register Now</button>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-light text-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Register
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title text-dark" id="exampleModalLabel">
+                      Register Now
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      class="rounded border-0 border-bottom w-100 mb-2"
+                    />
+                    <input
+                      type="password"
+                      placeholder="Password"
+                      class="rounded w-100 border-0 border-bottom mb-2"
+                    />
+                    <input
+                      type="password"
+                      placeholder="Re-enter password"
+                      class="rounded w-100 border-0 border-bottom mb-2"
+                    />
+                    <input
+                      type="tel"
+                      placeholder="Phone number"
+                      class="rounded w-100 border-0 border-bottom mb-2"
+                    />
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Register
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
