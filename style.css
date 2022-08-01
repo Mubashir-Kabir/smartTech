@@ -7,3 +7,6 @@
 .elearnBg{
     background-color: #F4FAFD;
 }
+.populerCourses img{
+    min-height: 250px;
+}
